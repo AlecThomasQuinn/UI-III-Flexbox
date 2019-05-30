@@ -27,7 +27,8 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style: square;
+	list-style-position: inside;
 }
 blockquote, q {
 	quotes: none;
@@ -64,59 +65,70 @@ h1, h2, h3, h4, h5 {
 /*My code begins*/
 
 body{
-	width: 920px;
+	width: 880px;
 	margin: auto;
-	height: auto;
-	border: 1px solid red;
 }
 
 header nav{
 	display: flex;
 	justify-content: space-between;
 	height: auto;
-	padding: 20px;
+	padding: 20px 0 20px 0;
 }
 
 header a{
 	margin: 20px;
+	text-decoration: none;
+	color: #ACBDD4;
+	font-size: 16px;
+	font-weight: semi-bold;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 .nav-logo{
 	margin-left: auto;
 }
 
+img{
+	margin-bottom: 20px;
+}
+
 article{
-	padding: 40px 10px 40px 10px;
+	margin-bottom: 20px;
 }
 
 article h2{
 	font-size: 26px;
+	margin-bottom: 20px;
 }
 
 article h3{
 	font-size: 18px;
+	margin-bottom: 20px;
 }
 
 hr{
 	border: solid black .5px;
-	margin: 20px 20px 0px 20px;
+	margin: 20px 0;
 }
 
 .main-section{
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: space-between;
 }
 
 .main-article{
-	background-color: lightgray;
-	width: 400px;
+	background-color: #F4F3F4;
+	width: 420px;
 	height: 250px;
 	border: solid black 1px;
-	margin: 10px;
+	margin: 20px 0;
+	padding: 20px;
 }
 
 .main-article-cta{
-	background-color: ghostwhite;
+	background-color: #FFFFFF;
 	font-size: 12px;
 	text-align: center;
 	padding: 7px;
@@ -125,4 +137,25 @@ hr{
 	height: 30px;
 	border: solid black 1px;
 	border-radius: 7px;
+}
+
+.footer-content-div{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.left-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 420px;
+	height: 300px;
+
+}
+
+.copyright{
+	text-align: center;
+	padding: 50px 0;
 }
